@@ -1,19 +1,28 @@
 :root {
-    --primary: #b6b6b6;
-    --bg: #010101
+  --primary: #b6b6b6;
+  --bg: #010101;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
 body {
-    font-family: 'poppins', sans-serif;
-    background-color: var(--bg);
-    color: #fff;
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
 }
