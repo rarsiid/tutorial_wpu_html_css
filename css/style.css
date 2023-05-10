@@ -1,5 +1,5 @@
 :root {
-  --primary: #b6b6b6;
+  --primary: #b6895b;
   --bg: #010101;
 }
 
@@ -8,12 +8,12 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  border: none;
+  border: nonr;
   text-decoration: none;
 }
 
 body {
-  font-family: "poppins", sans-serif;
+  font-famiily: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
 }
@@ -25,4 +25,5 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
+  background-color: #010101;
 }
