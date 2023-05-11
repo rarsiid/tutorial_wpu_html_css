@@ -44,3 +44,10 @@ body {
 .navbar .navbar-logo span {
   color: var(--primary);
 }
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1.3rem;
+}
