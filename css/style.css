@@ -55,3 +55,69 @@ body {
 .navbar .navbar-nav a:hover {
   color: var(--primary);
 }
+
+.navbar .navbar-var a::after {
+  content: "";
+  display: block;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scale(x);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scalex(0.5);
+}
+
+.navbar .navbar-ekstra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-ekstra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Media Queris */
+
+/* Laptop */
+@media (max-width: 13660x) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
