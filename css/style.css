@@ -26,7 +26,7 @@ body {
   align-items: center;
   padding: 1.4rem 7%;
   background-color: rgba(1, 1, 1, 0.8);
-  border-bottom: 1px solid #513c28;
+  border-bottom: 1px solid #473423;
   position: fixed;
   top: 0;
   left: 0;
@@ -61,12 +61,12 @@ body {
   display: block;
   padding-bottom: 1.5rem;
   border-bottom: 0.1rem solid var(--primary);
-  transform: scale(x);
+  transform: scaleX(0);
   transition: 0.2s linear;
 }
 
 .navbar .navbar-nav a:hover::after {
-  transform: scalex(0.5);
+  transform: scaleX(0.5);
 }
 
 .navbar .navbar-ekstra a {
@@ -85,7 +85,7 @@ body {
 /* Media Queris */
 
 /* Laptop */
-@media (max-width: 13660x) {
+@media (max-width: 1366x) {
   html {
     font-size: 75%;
   }
@@ -108,6 +108,7 @@ body {
     background-color: #fff;
     width: 30rem;
     height: 100vh;
+    transition: 0.3s;
   }
 
   .navbar .navbar-nav.active {
@@ -121,6 +122,14 @@ body {
   margin: 1.5rem;
   padding: 0.5rem;
   font-size: 2rem;
+}
+
+.navbar .navbar-nav a::after {
+  transform-origin: 0 0;
+}
+
+.navbar .navbar-nav a:nover::after {
+  transform: scaleX(0.2);
 }
 
 /* Mobile Phone */
